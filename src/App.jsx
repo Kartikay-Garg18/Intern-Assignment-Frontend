@@ -27,7 +27,7 @@ const App = () => {
     
     try {
       // Make API call to backend
-      const response = await fetch('http://localhost:3000/api/query', {
+      const response = await fetch('https://intern-assignment-backend-iota.vercel.app/api/query', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: input, history: messages })
